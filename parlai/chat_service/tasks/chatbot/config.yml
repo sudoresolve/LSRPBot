@@ -13,8 +13,10 @@ opt:
   models:
     blender_90M:
       model: transformer/generator
-      model_file: zoo:blender/blender_90M/model
+      model_file: zoo:bb3/bb3_3B/model
       interactive_mode: True
-      no_cuda: True
+      no_cuda: False
+      opt: gen/r2c2_bb3
+      search-server: 0.0.0.0:8080
 additional_args:
   page_id: 1 # Configure Your Own Page
